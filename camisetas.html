@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisetas Disco Girls</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="disco.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Felipa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body>
+
+     <header class="cabecalho">
+
+        <div class="logo-area">
+            <a href="index.html">
+<img src="logo (1).png" alt="Disco Girls">
+            </a>
+        </div>
+
+        <div class="centro-header">
+
+            <div class="barra-pesquisa">
+                <input type="text" id="pesquisa" placeholder="O que você está buscando hoje?">
+                <span><i class="bi bi-search"></i></span>
+            </div>
+
+            <nav class="menu">
+
+    <a href="index.html">Home</a>
+    <span>•</span>
+    <a href="discos.html">Discos de Vinil</a>
+    <span>•</span>
+    <a href="cds-dvds.html">CDs e DVDs</a>
+    <span>•</span>
+    <a href="camisetas.html">Camisetas</a>
+</nav>
+
+        </div>
+
+        <div class="icones-header">
+          <span id="carrinho"><i class="bi bi-cart3"></i></span>
+          <span id="perfil"><i class="bi bi-person"></i></span>
+          <span id="menu"><i class="bi bi-list"></i></span>
+        </div>
+
+    </header>
+
+    <div id="perfil-area">
+    <h3>Meu perfil</h3>
+    <p>Olá, seja bem-vinda!</p>
+    <button id="fechar-perfil">Fechar</button>
+</div>
+
+<div id="menu-area">
+    <h3>Menu</h3>
+
+    <a href="#">Início</a>
+    <a href="#">Meus pedidos</a>
+    <a href="#" id="abrir-favoritos">Favoritos</a>
+    <a href="#">Contato</a>
+
+    <button id="fechar-menu">Fechar</button>
+</div>
+
+<div id="favoritos-area">
+    <h3>Meus favoritos</h3>
+    <div id="lista-favoritos"></div>
+    <button id="fechar-favoritos">Fechar</button>
+</div>
+
+    <div id="carrinho-area">
+    <h3>Meu carrinho</h3>
+    <div id="itens-carrinho"></div>
+    <p id="total-carrinho">Total: R$ 0,00</p>
+    <button id="fechar-carrinho">Fechar</button>
+</div>
+    <main>
+
+        
+<div id="produto-modal">
+    <div class="modal-conteudo">
+        <button id="fechar-modal">×</button>
+
+        <img id="modal-imagem" src="" alt="">
+
+        <h3 id="modal-nome"></h3>
+
+        <h6 id="modal-descricao"></h6>
+
+        <strong id="modal-preco"></strong>
+
+        <button id="modal-adicionar">
+            Adicionar ao carrinho
+        </button>
+    </div>
+</div>
+
+
+    <div class="produtos-grid">
+
+        <div class="produto">
+            <div class="imagem-produto">
+                <img src="vinil/36.png" alt="Camiseta Mazzy Star">
+            </div>
+
+            <div class="informacoes-produto">
+                <p>Camiseta Mazzy Star Tam.: P <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                <strong>R$ 34,90</strong>
+                <button class="ver-produto">Ver produto</button>
+                <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </div>
+        </div>
+
+
+        <div class="produto">
+            <div class="imagem-produto">
+                <img src="vinil/37.png" alt="Baby Tee New York">
+            </div>
+
+            <div class="informacoes-produto">
+                <p>Baby Tee New York <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                <strong>R$ 32,90</strong>
+                <button class="ver-produto">Ver produto</button>
+                <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </div>
+        </div>
+
+
+        <div class="produto">
+            <div class="imagem-produto">
+                <img src="vinil/38.png" alt="Camiseta David Bowie">
+            </div>
+
+            <div class="informacoes-produto">
+                <p>Camiseta David Bowie Tam.: P <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                <strong>R$ 39,90</strong>
+                <button class="ver-produto">Ver produto</button>
+                <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </div>
+        </div>
+
+
+        <div class="produto">
+            <div class="imagem-produto">
+                <img src="vinil/39.png" alt="Camiseta Radiohead">
+            </div>
+
+            <div class="informacoes-produto">
+                <p>Camiseta Radiohead Tam.: M <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                <strong>R$ 29,90</strong>
+                <button class="ver-produto">Ver produto</button>
+                <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </div>
+        </div>
+
+
+        <div class="produto">
+            <div class="imagem-produto">
+                <img src="vinil/41.png" alt="Nirvana In Utero">
+            </div>
+
+            <div class="informacoes-produto">
+                <p>Camiseta Nirvana In Utero Tam.: G <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                <strong>R$ 49,90</strong>
+                <button class="ver-produto">Ver produto</button>
+                <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </div>
+        </div>
+
+
+        <div class="produto">
+            <div class="imagem-produto">
+                <img src="vinil/42.png" alt="Thriller - Michael Jackson">
+            </div>
+
+            <div class="informacoes-produto">
+                <p>Camiseta Alice in Chains Tam.: P <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                <strong>R$ 39,90</strong>
+                <button class="ver-produto">Ver produto</button>
+                <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </div>
+        </div>
+        
+        <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="produtos img/7.png" alt="Camiseta Jeff Buckley">
+                    </div>
+
+                    <div class="informacoes-produto">
+                        <p>Camiseta Jeff Buckley Tam. PP <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                        <strong>R$ 42,90</strong>
+                        <button class="ver-produto">Ver produto</button>
+                        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                
+        <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="produtos img/5.png" alt="Camiseta Kate Bush">
+                    </div>
+
+                    <div class="informacoes-produto">
+                        <p>Camiseta Kate Bush Tam. M <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                        <strong>R$ 44,90</strong>
+                        <button class="ver-produto">Ver produto</button>
+                        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Disco Girls</title>
+
+    <link rel="stylesheet" href="disco.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Felipa&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+
+        <div class="logo-area">
+            <a href="index.html">
+<img src="logo (1).png" alt="Disco Girls">
+            </a>
+        </div>
+
+        <div class="centro-header">
+
+            <div class="barra-pesquisa">
+                <input type="text" id="pesquisa" placeholder="O que você está buscando hoje?">
+                <span><i class="bi bi-search"></i></span>
+            </div>
+
+            <nav class="menu">
+    <a href="index.html">Home</a>
+    <span>•</span>
+    <a href="discos.html">Discos de Vinil</a>
+    <span>•</span>
+    <a href="cds-dvds.html">CDs e DVDs</a>
+    <span>•</span>
+    <a href="camisetas.html">Camisetas</a>
+</nav>
+
+        </div>
+        <div class="icones-header">
+          <span id="carrinho"><i class="bi bi-cart3"></i></span>
+          <span id="perfil"><i class="bi bi-person"></i></span>
+          <span id="menu"><i class="bi bi-list"></i></span>
+        </div>
+    </header>
+    <div id="perfil-area">
+
+    <div class="perfil-caixa">
+
+        <button id="fechar-perfil-login" type="button">×</button>
+
+        <div class="perfil-boas-vindas">
+            <h3>Meu perfil</h3>
+            <p>Entre na sua conta<br>e aproveite a sua experiência Disco Girls.</p>
+        </div>
+
+        <div id="login-formulario">
+
+            <input type="text" id="usuario" placeholder="Usuário">
+
+            <input type="password" id="senha" placeholder="Senha">
+
+            <button id="entrar-login" type="button">
+                Entrar
+            </button>
+
+            <button id="cancelar-login" type="button">
+                Cancelar
+            </button>
+
+            <p id="mensagem"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="menu-area">
+    <h3>Menu</h3>
+
+    <a href="#">Início</a>
+    <a href="#">Meus pedidos</a>
+    <a href="#" id="abrir-favoritos">Favoritos</a>
+    <a href="#">Contato</a>
+
+    <button id="fechar-menu">Fechar</button>
+</div>
+
+<div id="favoritos-area">
+    <h3>Meus favoritos</h3>
+    <div id="lista-favoritos"></div>
+    <button id="fechar-favoritos">Fechar</button>
+</div>
+
+    <div id="carrinho-area">
+    <h3>Meu carrinho</h3>
+    <div id="itens-carrinho"></div>
+    <p id="total-carrinho">Total: R$ 0,00</p>
+    <button id="fechar-carrinho">Fechar</button>
+</div>
+    <main>
+
+        <section class="carrossel">
+
+    <div class="carousel">
+    <div class="slides">
+        <div class="slide">
+            <img src="img/1.png">
+        </div>
+
+        <div class="slide">
+            <img src="img/2.png">
+        </div>
+
+        <div class="slide">
+            <img src="img/3.png">
+        </div>
+    </div>
+    <button class="prev">‹</button>
+    <button class="next">›</button>
+
+    <div class="dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <div class="indicadores">
+        <span class="bolinha ativa" onclick="mostrarSlide(0)"></span>
+        <span class="bolinha" onclick="mostrarSlide(1)"></span>
+        <span class="bolinha" onclick="mostrarSlide(2)"></span>
+    </div>
+
+</section>
+
+</section>
+
+
+        <h2 id="titulo-produtos">Mais vendidos:</h2>
+
+            <div class="produtos-grid">
+
+                <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="produtos img/1.png" alt="Grace - Jeff Buckley">
+                    </div>
+
+                    <div class="informacoes-produto">
+                        <p>Vinil: Grace - Jeff Buckley <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                        <strong>R$ 144,90</strong>
+                        <button class="ver-produto">Ver produto</button>
+                        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+
+                <div class="produto">
+                    <div class="imagem-produto">
+                        
+                        <img src="produtos img/2.png" alt="Rumours - Fleetwood Mac">
+                    </div>
+
+                    <div class="informacoes-produto">
+                        <p>CD: Rumours - Fleetwood Mac <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                        <strong>R$ 62,90</strong>
+                        <button class="ver-produto">Ver produto</button>
+                        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+
+                <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="produtos img/3.png" alt="The Colour and the Shape">
+                    </div>
+                    <div class="informacoes-produto">
+                        <p>CD: The Colour and the Shape - Foo Fighters <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                        <strong>R$ 62,90</strong>
+                        <button class="ver-produto">Ver produto</button>
+                        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="produtos img/4.png" alt="In Utero - Nirvana">
+                    </div>
+
+                    <div class="informacoes-produto">
+                        <p>CD: In Utero - Nirvana <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                        <strong>R$ 69,90</strong>
+                        <button class="ver-produto">Ver produto</button>
+                        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="produtos img/5.png" alt="Camiseta Kate Bush">
+                    </div>
+
+                    <div class="informacoes-produto">
+                        <p>Camiseta Kate Bush Tam. M <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                        <strong>R$ 44,90</strong>
+                        <button class="ver-produto">Ver produto</button>
+                        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="produtos img/6.png" alt="Kit de Posters Meninas Malvadas">
+                    </div>
+
+                    <div class="informacoes-produto">
+                        <p>Kit 2 Posters Meninas Malvadas Tam.:55x60cm<button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                        <strong>R$ 24,90</strong>
+                        <button class="ver-produto">Ver produto</button>
+                        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="produtos img/7.png" alt="Camiseta Jeff Buckley">
+                    </div>
+
+                    <div class="informacoes-produto">
+                        <p>Camiseta Jeff Buckley Tam. PP <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                        <strong>R$ 42,90</strong>
+                        <button class="ver-produto">Ver produto</button>
+                        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="produtos img/8.png" alt="Poster Stateside">
+                    </div>
+
+                    <div class="informacoes-produto">
+                        <p>Poster Stateside Tam: 55x60 <button class="favoritar"><i class="bi bi-suit-heart"></i></button></p>
+                        <strong>R$ 15,90</strong>
+                        <button class="ver-produto">Ver produto</button>
+                        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="produto-modal">
+    <div class="modal-conteudo">
+        <button id="fechar-modal">×</button>
+
+        <img id="modal-imagem" src="" alt="">
+
+        <h3 id="modal-nome"></h3>
+
+        <h6 id="modal-descricao"></h6>
+
+        <strong id="modal-preco"></strong>
+
+        <button id="modal-adicionar">Adicionar ao carrinho</button>
+    </div>
+</div>
+    <footer class="rodape">
+        <div class="rodape-logo">
+            <img src="logo (1).png" alt="Disco Girls">
+            <div class="redes">
+                <span><i class="bi bi-instagram"></i></span>
+                <span><i class="bi bi-tiktok"></i></span>
+                <span><i class="bi bi-twitter-x"></i></span>
+            </div>
+        <div class="copyright">
+    © 2026 Disco Girls. Todos os direitos reservados.
+</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

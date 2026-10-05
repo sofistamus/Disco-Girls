@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Disco Girls</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Disco Girls</h1>
+        <h2>Login</h2>
+
+        <form onsubmit="event.preventDefault(); fazerLogin();">
+            <input type="text" id="usuario" placeholder="Usuário">
+
+<input type="password" id="senha" placeholder="Senha">
+
+<button type="button" onclick="fazerLogin()">Entrar</button>
+
+        </form>
+
+        <button type="button" class="cancelar" onclick="window.location.href='index.html'">
+    Cancelar
+</button>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
