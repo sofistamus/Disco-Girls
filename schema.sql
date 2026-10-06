@@ -1,13 +1,6 @@
--- Banco de dados do Disco Girls
--- Rode este arquivo uma vez no MySQL para criar o banco e a tabela.
+DROP TABLE usuarios;
 
-CREATE DATABASE IF NOT EXISTS disco_girls
-    CHARACTER SET utf8mb4
-    COLLATE utf8mb4_unicode_ci;
-
-USE disco_girls;
-
-CREATE TABLE IF NOT EXISTS usuarios (
+CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(50) NOT NULL UNIQUE,
     senha_hash VARCHAR(255) NOT NULL,
